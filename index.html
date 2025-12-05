@@ -1,20 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loom navbar</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-    </ul>
-</nav>
-    
+
+<header class="navbar">
+  <div class="navbar__logo">loom</div>
+  
+  <!-- Hamburger -->
+  <button class="navbar__toggle" aria-label="Open navigatie" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Menu -->
+  <nav class="navbar__menu">
+    <a href="#">Home</a>
+    <a href="#">Waarom Loom</a>
+    <a href="#">Hoe het helpt</a>
+    <a href="#">Onze pijlers</a>
+    <a href="#">Blogs</a>
+    <a href="#">FAQ</a>
+    <a href="#" class="navbar__cta">Join Loom</a>
+  </nav>
+
+  <script>
+  // simpele toggle voor het dropdown-menu
+  const toggleBtn = document.querySelector('.navbar__toggle');
+  const navMenu   = document.querySelector('.navbar__menu');
+
+  toggleBtn.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('navbar__menu--open');
+    toggleBtn.classList.toggle('navbar__toggle--open', isOpen);
+    toggleBtn.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+</header>
 </body>
 </html>

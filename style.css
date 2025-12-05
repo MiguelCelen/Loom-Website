@@ -1,25 +1,131 @@
-ul {
-  list-style-type: none;
+* {
+  box-sizing: border-box;
+}
+
+body {
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
+  font-family: "Georgia", "Times New Roman", serif;
+  background-color: #ffffff;
 }
 
-ul li {
+/* ===== NAVBAR – mobile first ===== */
+
+.navbar {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background-color: #ffffff;
+  z-index: 10;
 }
 
-ul li a {
+/* Logo */
+.navbar__logo {
+  font-size: 2.7rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #8b8764;
+}
+
+/* Hamburger knop */
+.navbar__toggle {
+  width: 40px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.navbar__toggle span {
+  height: 4px;
+  border-radius: 999px;
+  background-color: #8b8764;
   display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* optioneel: animatie naar kruisje */
+.navbar__toggle--open span:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+.navbar__toggle--open span:nth-child(2) {
+  opacity: 0;
+}
+.navbar__toggle--open span:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* Menu: standaard verborgen op mobile */
+.navbar__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 24px 24px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.navbar__menu a {
+  text-decoration: none;
+  color: #8b8764;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* als open → dropdown zichtbaar */
+.navbar__menu--open {
+  display: flex;
+}
+
+/* CTA-stijl hergebruiken */
+.navbar__cta {
+  padding: 10px 34px;
+  border-radius: 999px;
+  background-color: #8b8764; /* groen/olijf */
+  color: #ffffff !important;
   text-decoration: none;
 }
 
-ul li a:hover {
-  background-color: #111111;
+
+/* ===== Desktop-layout vanaf bv. 900px ===== */
+
+@media (min-width: 900px) {
+  .navbar {
+    padding: 18px 80px;
+  }
+
+  .navbar__toggle {
+    display: none;
+  }
+
+  .navbar__menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .navbar__menu a {
+    font-size: 18px;
+  }
+
+  .navbar__menu--open {
+    display: flex; /* gewoon altijd zichtbaar op desktop */
+  }
+
+  .navbar__cta {
+    padding: 10px 34px;
+  }
 }
