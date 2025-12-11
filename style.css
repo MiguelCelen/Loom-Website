@@ -87,3 +87,42 @@ body {
   color: #fff !important;
   text-align: center;
 }
+
+/* intro */
+img{ width:100%; height:auto; display:block; object-fit:cover; }
+
+/* knoppen*/
+.knop{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 48px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:1.1rem;
+}
+.knop--licht{ background:#f5edd7; color:#8b8764; }
+.knop--donker{ background:#8b8764; color:#f5edd7; }
+.knop:hover{ filter:brightness(.97); }
+
+/* intro */
+.intro{ background:#fff; }
+.intro__inhoud{
+  background:#8b8764;
+  color:#f5edd7;
+  padding:32px 24px 40px;
+  border-radius:0 0 0 40px;
+  text-align:left;
+}
+.intro__inhoud h1{
+  margin:0 0 16px;
+  font-size:1.8rem;
+  line-height:1.2;
+  font-weight:700;
+}
+.intro__inhoud p{ 
+  margin:0 0 28px; 
+  font-size:1rem; 
+  line-height:1.6; 
+}
