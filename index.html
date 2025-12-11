@@ -3,43 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Loom navbar</title>
+  <link href="https://db.onlinewebfonts.com/c/1dc7840abb13fcda12aa8d1cb21fb832?family=Agrandir" rel="stylesheet" type="text/css"/>
+  <title>Loom</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<header class="navbar">
-  <div class="navbar__logo">loom</div>
-  
-  <!-- Hamburger -->
-  <button class="navbar__toggle" aria-label="Open navigatie" aria-expanded="false">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+  <main>
+    
+  </main>
 
-  <!-- Menu -->
-  <nav class="navbar__menu">
-    <a href="#">Home</a>
-    <a href="#">Waarom Loom</a>
-    <a href="#">Hoe het helpt</a>
-    <a href="#">Onze pijlers</a>
-    <a href="#">Blogs</a>
-    <a href="#">FAQ</a>
-    <a href="#" class="navbar__cta">Join Loom</a>
-  </nav>
-
-  <script>
-  // simpele toggle voor het dropdown-menu
-  const toggleBtn = document.querySelector('.navbar__toggle');
-  const navMenu   = document.querySelector('.navbar__menu');
-
-  toggleBtn.addEventListener('click', () => {
-    const isOpen = navMenu.classList.toggle('navbar__menu--open');
-    toggleBtn.classList.toggle('navbar__toggle--open', isOpen);
-    toggleBtn.setAttribute('aria-expanded', isOpen);
-  });
-</script>
-</header>
 </body>
 </html>
