@@ -279,3 +279,39 @@ img{
 .aanpak__illustratie img{ 
   transform:scaleX(-1); 
 }
+
+/* pijlers */
+.pijlers{
+  background:#fff;
+  padding:40px 24px 48px;
+  color:#8b8764;
+}
+.pijlers__binnen{ 
+  text-align:center; 
+}
+.pijlers__titel{ 
+  font-size:1.8rem;
+  font-weight:700;
+  line-height:1.3;
+  margin:0 0 10px 0;
+}
+.pijlers__scheiding{
+  height:3px;
+  border:0;
+  background:#e4d7b9;
+  border-radius:999px;
+  width:70%;
+  max-width:260px;
+  margin:0 auto 28px;
+}
+.pijlers__lijst{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  justify-content:center;
+  gap:14px 40px;
+}
+.pijlers__enkel{ 
+  grid-column:1 / 3; 
+}
