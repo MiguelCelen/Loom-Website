@@ -2,7 +2,6 @@
   box-sizing: border-box;
   font-family: Agrandir;
 }
-
 body {
   margin: 0;
 }
@@ -17,7 +16,6 @@ body {
   background: #fff;
   z-index: 10;
 }
-
 .navigatiebalk__logo svg {
   display: block;
 }
@@ -34,22 +32,18 @@ body {
   justify-content: space-between;
   cursor: pointer;
 }
-
 .navigatiebalk__knop span {
   height: 4px;
   border-radius: 999px;
   background: #8b8764;
   transition: transform .2s ease, opacity .2s ease;
 }
-
 .navigatiebalk__knop--open span:nth-child(1) {
   transform: translateY(13px) rotate(45deg);
 }
-
 .navigatiebalk__knop--open span:nth-child(2) {
   opacity: 0;
 }
-
 .navigatiebalk__knop--open span:nth-child(3) {
   transform: translateY(-13px) rotate(-45deg);
 }
@@ -67,19 +61,16 @@ body {
   background: #fff;
   box-shadow: 0 4px 12px rgba(0,0,0,.06);
 }
-
 .navigatiebalk__menu a {
   text-decoration: none;
   color: #8b8764;
   font-weight: 600;
   font-size: 16px;
 }
-
 .navigatiebalk__menu--open {
   display: flex;
   border-radius: 0 0 40px 40px;
 }
-
 .navigatiebalk__cta {
   padding: 10px 34px;
   border-radius: 999px;
@@ -89,7 +80,12 @@ body {
 }
 
 /* intro */
-img{ width:100%; height:auto; display:block; object-fit:cover; }
+img{ 
+  width:100%; 
+  height:auto; 
+  display:block; 
+  object-fit:cover; 
+}
 
 /* knoppen*/
 .knop{
@@ -102,12 +98,22 @@ img{ width:100%; height:auto; display:block; object-fit:cover; }
   font-weight:600;
   font-size:1.1rem;
 }
-.knop--licht{ background:#f5edd7; color:#8b8764; }
-.knop--donker{ background:#8b8764; color:#f5edd7; }
-.knop:hover{ filter:brightness(.97); }
+.knop--licht{ 
+  background:#f5edd7; 
+  color:#8b8764; 
+}
+.knop--donker{ 
+  background:#8b8764; 
+  color:#f5edd7; 
+}
+.knop:hover{ 
+  filter:brightness(.97); 
+}
 
 /* intro */
-.intro{ background:#fff; }
+.intro{ 
+  background:#fff; 
+}
 .intro__inhoud{
   background:#8b8764;
   color:#f5edd7;
@@ -133,21 +139,77 @@ img{ width:100%; height:auto; display:block; object-fit:cover; }
   text-align:center;
   background:#fff;
 }
-
 .waarom__inhoud{ 
   color:#8b8764; 
 }
-
 .onderstreep{
   border-bottom:3px solid #f5edd7;
   padding-bottom:4px;
 }
-
-.waarom h1{ font-size:1.9rem; 
+.waarom h1{ 
+  font-size:1.9rem; 
   margin:0 0 8px; 
 }
-
-.waarom p{ margin:0; 
+.waarom p{ 
+  margin:0; 
   font-size:1rem; 
   line-height:1.6; 
+}
+
+/* kenmerken */
+.kenmerken{ 
+  padding:32px 24px 56px; 
+}
+.kenmerken__beelden{
+  display:grid;
+  grid-template-columns:2fr 1.1fr;
+  grid-template-areas:
+    "groot klein"
+    "onder onder";
+  gap:20px 16px;
+  max-width:380px;
+  margin:0 auto 40px;
+}
+.kenmerken__beeld img{ 
+  border-radius:28px; 
+}
+.kenmerken__beeld--links-groot{ 
+  grid-area:groot; 
+}
+.kenmerken__beeld--rechts-boven{ 
+  grid-area:klein; align-self:start; 
+  margin-top:25px; 
+}
+.kenmerken__beeld--onder-midden{ 
+  grid-area:onder; 
+  justify-self:center; width:60%; 
+}
+.kenmerken__lijst{
+  list-style:none;
+  padding:0;
+  margin:8px 0 32px;
+}
+.kenmerken__item{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  margin-bottom:20px;
+}
+.kenmerken__icoon{
+  flex:0 0 28px;
+  width:28px;
+  height:28px;
+  padding:4px;
+}
+.kenmerken__item p{ margin:0; 
+  color:#8b8764; 
+  font-size:.98rem; 
+  line-height:1.6; 
+}
+
+/* button in kenmerken */
+.kenmerken .knop{
+  display:flex;
+  margin:16px auto 0;
+  padding:14px 56px;
 }
