@@ -126,3 +126,28 @@ img{ width:100%; height:auto; display:block; object-fit:cover; }
   font-size:1rem; 
   line-height:1.6; 
 }
+
+/* waarom */
+.waarom{
+  padding:40px 24px 24px;
+  text-align:center;
+  background:#fff;
+}
+
+.waarom__inhoud{ 
+  color:#8b8764; 
+}
+
+.onderstreep{
+  border-bottom:3px solid #f5edd7;
+  padding-bottom:4px;
+}
+
+.waarom h1{ font-size:1.9rem; 
+  margin:0 0 8px; 
+}
+
+.waarom p{ margin:0; 
+  font-size:1rem; 
+  line-height:1.6; 
+}
