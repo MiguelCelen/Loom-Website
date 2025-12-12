@@ -206,10 +206,76 @@ img{
   font-size:.98rem; 
   line-height:1.6; 
 }
-
-/* button in kenmerken */
 .kenmerken .knop{
   display:flex;
   margin:16px auto 0;
   padding:14px 56px;
+}
+
+/* aanpak */
+.aanpak{
+  background:#8b8764;
+  color:#f5edd7;
+  padding:40px 24px 56px;
+  border-radius:0 40px 0 40px;
+}
+.aanpak__binnen{ 
+  text-align:center; 
+}
+.aanpak__titel{ 
+  font-size:1.9rem; 
+  margin:0 0 18px; 
+}
+.onderstreep{ border-bottom:3px 
+  solid #f5edd7; 
+  padding-bottom:4px; 
+}
+.aanpak__tekst{ 
+  margin:0 0 24px; 
+  font-size:1rem; 
+  line-height:1.6; }
+.aanpak__cijfers{
+  background:#f5edd7;
+  color:#8b8764;
+  border-radius:18px;
+  padding:14px 12px 10px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  text-align:center;
+  margin-bottom:24px;
+}
+.aanpak__cijfer{ 
+  padding:0 6px; 
+}
+.aanpak__cijfer + .aanpak__cijfer{ 
+  border-left:1px solid #e1d5b7; 
+}
+.aanpak__cijfer-label{ 
+  display:block; 
+  font-size:.9rem; 
+  font-weight:600; 
+  margin-bottom:6px; 
+}
+.aanpak__cijfer-waarde{ 
+  display:block; 
+  font-size:.8rem; 
+  line-height:1.4; 
+}
+.image__aanpak{
+  border-radius: 30px;
+}
+.aanpak__kaart{
+  margin-top:8px;
+  border-radius:28px;
+  min-height:220px;
+  position:relative;
+}
+.aanpak__illustratie{
+  position:absolute;
+  bottom: -40px;
+  width:160px;
+  right: -27px;
+}
+.aanpak__illustratie img{ 
+  transform:scaleX(-1); 
 }
