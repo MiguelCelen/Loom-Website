@@ -471,3 +471,75 @@ img{
   margin:0 0 18px; 
   font-size:1rem; 
 }
+
+/* voettekst */
+.voet{
+  background:#8b8764;
+  color:#f5edd7;
+  padding:32px 24px 40px;
+  border-radius:32px 32px 0 0;
+}
+.voet__merk{ 
+  margin-bottom:24px; 
+  text-align:center; 
+}
+.voet__logo{ 
+  margin-bottom:6px; 
+  text-align:center; 
+}
+.voet__merk p{ 
+  margin:0; 
+  font-size:.9rem; 
+  line-height:1.5; 
+}
+.voet__kolommen{
+  margin:24px 0; 
+}
+.voetklapper__kop{
+  width:100%;
+  padding:10px 0;
+  border:0;
+  background:none;
+  color:inherit;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font:inherit;
+  font-weight:600;
+  cursor:pointer;
+}
+.voetklapper__icoon{ 
+  font-size:1.3rem; 
+  line-height:1; 
+}
+.voetklapper__inhoud{
+  list-style:none;
+  padding:0 0 4px;
+  margin:0;
+  display:none;
+}
+.voetklapper__inhoud li{ 
+  margin-bottom:4px; 
+}
+.voetklapper__inhoud a{ 
+  color:#f5edd7; 
+  text-decoration:none; 
+  font-size:.9rem; 
+}
+
+.voet__socials{ 
+  text-align:center; 
+}
+.voet__socials p{ 
+  margin:0 0 8px; 
+  font-size:.9rem; 
+}
+.voet__socials-iconen{ 
+  display:flex; 
+  justify-content:center; 
+  gap:8px; 
+}
+.voet__socials-iconen a{
+  width:28px; 
+  height:28px;
+}
