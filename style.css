@@ -834,6 +834,11 @@ img{
   .veelgestelde-vragen__contacttekst{
     margin-bottom: 20px;
   }
+  .voet__binnen{
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+  }
   .voet__kolommen{ 
     flex:none; 
     gap:100px; 
