@@ -504,7 +504,6 @@ img{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  font:inherit;
   font-weight:600;
   cursor:pointer;
 }
@@ -542,4 +541,229 @@ img{
 .voet__socials-iconen a{
   width:28px; 
   height:28px;
+}
+
+/* media querry tablet */
+@media (min-width:768px){
+
+  /* intro */
+  .intro{
+    display:grid;
+    grid-template-columns:minmax(0,1.05fr) minmax(0,1.4fr);
+    min-height:480px;
+  }
+  .intro__afbeelding-kader{ 
+    order:2; 
+    height:100%; 
+  }
+  .intro__afbeelding{ 
+    height:100%; 
+  }
+  .intro__inhoud{
+    order:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:40px 40px 48px;
+  }
+  .intro__inhoud h1{ 
+    font-size:2.2rem; 
+  }
+  .intro__inhoud p{ 
+    font-size:1.05rem; 
+  }
+  .knop{ 
+    font-size:1.15rem; 
+    padding:14px 56px; 
+  }
+  .waarom{ 
+    padding:56px 60px 32px; 
+  }
+  .waarom h1{ 
+    font-size:2.2rem; 
+  }
+  .waarom p{ 
+    font-size:1.05rem; 
+  }
+
+  /* kenmerken */
+  .kenmerken{
+    padding:40px 60px 72px;
+    display:grid;
+    grid-template-columns:minmax(0,1.1fr) minmax(0,1.2fr);
+    column-gap:56px;
+    align-items:flex-start;
+  }
+  .kenmerken__beelden{ 
+    margin:0; 
+    max-width:none; 
+  }
+  .kenmerken__item p{ 
+    font-size:1.05rem; 
+  }
+  .kenmerken .knop{ 
+    grid-column:1 / -1; 
+    margin-top:24px; 
+  }
+  .aanpak{ 
+    padding:56px 60px 72px; 
+  }
+  .aanpak__binnen{ 
+    max-width:1100px; 
+  }
+  .aanpak__titel{ 
+    font-size:2.2rem; 
+  }
+  .aanpak__tekst{ 
+    font-size:1.05rem; 
+  }
+  .aanpak__kaart{ 
+    min-height:260px; 
+    border-radius:32px; 
+  }
+  .aanpak__illustratie{ 
+    width:170px; 
+    right:32px; 
+    bottom:0; }
+  .pijlers{ 
+    padding:56px 60px 64px; 
+  }
+  .pijlers__binnen{ 
+    max-width:900px; 
+  }
+  .pijlers__titel{ 
+    font-size:2.1rem; 
+  }
+  .pijlers__lijst{ 
+    grid-template-columns:repeat(5,auto); 
+    gap:14px 60px; 
+  }
+  .pijlers__enkel{ 
+    grid-column:auto; 
+  }
+
+  /* artikelen grid */
+  .artikelen{ 
+    padding:56px 60px 72px; 
+  }
+  .artikelen__binnen{
+    max-width:1100px;
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:24px;
+  }
+  .artikelen__titel{
+    grid-column:1 / -1;
+    font-size:1.9rem;
+    margin-bottom:32px;
+  }
+  .artikel__scheiding{
+    display: none;
+  }
+  .artikelkaart{ 
+    margin-bottom:0; 
+  }
+  .artikelkaart__beeld{ 
+    height:180px; 
+  }
+  .artikelkaart__inhoud h3{ 
+    font-size:1.2rem; 
+  }
+  .artikelkaart__inhoud p{ 
+    font-size:1rem; 
+  }
+
+  /* faq */
+  .veelgestelde-vragen{ 
+    padding:56px 60px 64px; 
+  }
+  .veelgestelde-vragen__beeldvak{ 
+    height:260px; 
+    margin-bottom:0; 
+  }
+  .veelgestelde-vragen__binnen{ 
+    max-width:1100px; 
+    padding-top:30px; 
+  }
+  .veelgestelde-vragen__titel{ 
+    text-align:center; 
+    font-size:2rem; 
+  }
+  .veelgestelde-vragen__scheiding{ 
+    width:100%; 
+    margin:8px 0 20px;
+    max-width: none;
+  }
+  .veelgestelde-vragen__contactkaart{
+    max-width:none;
+    margin:40px 0 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    text-align:left;
+  }
+  .veelgestelde-vragen__contacttitel{ 
+    margin:0 0 4px; 
+    font-size:1.6rem; 
+    line-height:1.4; 
+  }
+  .veelgestelde-vragen__contacttekst{ 
+    margin:0; 
+    max-width:60%; 
+  }
+  .veelgestelde-vragen__contactkaart .knop{ 
+    flex-shrink:0; 
+    padding:12px 40px; 
+    font-size:1rem; 
+  }
+
+  /* voettekst kolommen */
+  .voet{ 
+    padding:40px 60px 48px; 
+  }
+  .voet__binnen{
+    max-width:1100px;
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:30px;
+  }
+  .voet__merk{ 
+    flex:0 0 260px; 
+    text-align:left; 
+    margin-bottom:0; 
+  }
+  .voet__logo{ 
+    text-align:left; 
+    margin-bottom:12px; 
+  }
+  .voet__kolommen{
+    flex:1 1 auto;
+    display:flex;
+    gap:60px;
+    margin-top:60px;
+  }
+
+  /* accordions */
+  .voetklapper__kop{ 
+    padding:0 0 8px; 
+    justify-content:flex-start; 
+  }
+  .voetklapper__icoon{ 
+    display:none; 
+  }
+  .voetklapper__inhoud{ 
+    display:block; 
+    padding:0; 
+  }
+  .voetklapper__inhoud li{ 
+    margin-bottom:6px; 
+  }
+  .voet__socials{ 
+    text-align:left;
+    margin-top: 60px; 
+  }
+  .voet__socials-iconen{ 
+    justify-content:flex-start; 
+  }
 }
